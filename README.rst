@@ -13,8 +13,8 @@ If you have any funny idea to improve the current implementation (remember: we w
 Usage
 -----
 
-::
-    
+.. code-block::
+
     >>> sf = SuperFormatter()
 
 It does everything the regular `format()` method does (and that's already a lot, see `https://pyformat.info/ <https://pyformat.info/>`_)
@@ -23,13 +23,14 @@ But it also ca:
 
 - call methods:
 
-::
+.. code-block::
+
     >>> sf.format('My name is {name.upper:call}', name="eric")
     'My name is ERIC'
 
 - make loops:
 
-::
+.. code-block::
 
     >>> sf = SuperFormatter()
     >>> sf.format('''Table of contents:
@@ -44,7 +45,7 @@ But it also ca:
 
 - manage conditions:
 
-::
+.. code-block::
 
     >>> sf = SuperFormatter()
     >>> sf.format('Action: Back / Logout {manager:if:/ Delete {id}}', manager=True, id=34)
