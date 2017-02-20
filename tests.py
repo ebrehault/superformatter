@@ -66,7 +66,7 @@ Chapter IV
     def test_if_with_fields(self):
         sf = SuperFormatter()
         self.assertEqual(
-            sf.format('Action: Back / Logout {manager:if:/ Delete {id}}', manager=False, id=34),
+            sf.format('Action: Back / Logout {manager:if:/ Delete {id}}', manager=True, id=34),
             'Action: Back / Logout / Delete 34'
         )
 
